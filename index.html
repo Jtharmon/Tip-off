@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broadcasting App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        #videoContainer {
+            width: 80%;
+            max-width: 800px;
+            margin-bottom: 20px;
+        }
+        video {
+            width: 100%;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div id="videoContainer">
+        <video id="videoPlayer" controls>
+            <source src="" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <button id="startBroadcast">Start Broadcasting</button>
+
+    <script>
+        const startBroadcastButton = document.getElementById('startBroadcast');
+        const videoPlayer = document.getElementById('videoPlayer');
+
+        startBroadcastButton.addEventListener('click', () => {
+            // Implement the functionality to start broadcasting here
+            // For example, you could use WebRTC for real-time broadcasting
+            console.log('Broadcasting started');
+        });
+    </script>
+</body>
+</html>
+
+
